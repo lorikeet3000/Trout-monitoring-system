@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank1"
+        android:layout_width="@dimen/tank_width"
+        android:layout_height="@dimen/tank_height"
+        android:layout_marginBottom="@dimen/tank_margin"
+        android:tag="@integer/tank1"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/tank2"
+        app:layout_constraintEnd_toStartOf="@+id/pathTo1" />
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank2"
+        android:layout_width="@dimen/tank_width"
+        android:layout_height="@dimen/tank_height"
+        android:layout_marginBottom="16dp"
+        android:tag="@integer/tank2"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/tank1"
+        app:layout_constraintStart_toStartOf="@+id/tank1" />
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank3"
+        android:layout_width="@dimen/tank_width"
+        android:layout_height="@dimen/tank_height"
+        android:layout_marginTop="@dimen/tank_margin"
+        android:tag="@integer/tank3"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="@+id/tank1"
+        app:layout_constraintStart_toStartOf="@+id/tank1"
+        app:layout_constraintTop_toBottomOf="@+id/tank2" />
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank4"
+        android:layout_width="@dimen/tank_width"
+        android:layout_height="@dimen/tank_height"
+        android:layout_marginTop="@dimen/tank_margin"
+        android:tag="@integer/tank4"
+        android:text="4"
+        app:layout_constraintEnd_toEndOf="@+id/tank3"
+        app:layout_constraintStart_toStartOf="@+id/tank3"
+        app:layout_constraintTop_toBottomOf="@+id/tank3" />
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank5"
+        android:layout_width="@dimen/tank_width"
+        android:layout_height="@dimen/tank_height"
+        android:layout_marginBottom="16dp"
+        android:tag="@integer/tank5"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/pathTo5" />
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank6"
+        android:layout_width="@dimen/tank_width"
+        android:layout_height="@dimen/tank_height"
+        android:layout_marginTop="@dimen/tank_margin"
+        android:tag="@integer/tank6"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="@+id/tank5"
+        app:layout_constraintStart_toStartOf="@+id/tank5"
+        app:layout_constraintTop_toBottomOf="@+id/tank5" />
+
+    <View
+        android:id="@+id/path5To6"
+        android:layout_width="@dimen/path_vertical_width"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@id/tank6"
+        app:layout_constraintEnd_toStartOf="@+id/pathTo5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tank5" />
+
+    <View
+        android:id="@+id/path1To4"
+        android:layout_width="@dimen/path_vertical_width"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/tank1" />
+
+    <View
+        android:id="@+id/pathTo1"
+        android:layout_width="@dimen/path_width"
+        android:layout_height="@dimen/path_height"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank1"
+        app:layout_constraintEnd_toStartOf="@+id/path1To4"
+        app:layout_constraintTop_toTopOf="@+id/tank1" />
+
+    <View
+        android:id="@+id/pathTo2"
+        android:layout_width="@dimen/path_width"
+        android:layout_height="@dimen/path_height"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank2"
+        app:layout_constraintStart_toEndOf="@+id/tank2"
+        app:layout_constraintTop_toTopOf="@+id/tank2" />
+
+    <View
+        android:id="@+id/pathTo3"
+        android:layout_width="@dimen/path_width"
+        android:layout_height="@dimen/path_height"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank3"
+        app:layout_constraintStart_toEndOf="@+id/tank3"
+        app:layout_constraintTop_toTopOf="@+id/tank3" />
+
+    <View
+        android:id="@+id/pathTo4"
+        android:layout_width="@dimen/path_width"
+        android:layout_height="@dimen/path_height"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank4"
+        app:layout_constraintStart_toEndOf="@+id/tank4"
+        app:layout_constraintTop_toTopOf="@+id/tank4" />
+
+    <View
+        android:id="@+id/pathTo5"
+        android:layout_width="@dimen/path_width"
+        android:layout_height="@dimen/path_height"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank5"
+        app:layout_constraintStart_toEndOf="@+id/path5To6"
+        app:layout_constraintTop_toTopOf="@+id/tank5" />
+
+    <View
+        android:id="@+id/pathTo6"
+        android:layout_width="@dimen/path_width"
+        android:layout_height="@dimen/path_height"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tank6"
+        app:layout_constraintEnd_toStartOf="@+id/tank6"
+        app:layout_constraintTop_toTopOf="@+id/tank6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

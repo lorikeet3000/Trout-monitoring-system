@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_navigation">
+
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/main_she" />
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/events" />
+
+        <item
+            android:id="@+id/nav_new_record"
+            android:icon="@drawable/ic_grid_on_black_24dp"
+            android:title="@string/new_record" />
+
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/area_info" />
+
+        <item
+            android:id="@+id/nav_plans"
+            android:icon="@drawable/ic_access_time_black_24dp"
+            android:title="@string/plans" />
+    </group>
+
+    <group android:id="@+id/group_action">
+
+        <item
+            android:id="@+id/action_refresh"
+            android:title="@string/refresh_data"
+            />
+
+        <item
+            android:id="@+id/action_logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/tank_background"
+        android:layout_width="@dimen/tank_circle_size"
+        android:layout_height="@dimen/tank_circle_size"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/colorGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/action_next_tank"
+        app:layout_constraintStart_toEndOf="@+id/action_prev_tank"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/action_prev_tank"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="?android:selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/action_next_tank"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_tank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="%Садок 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/tank_background"
+        app:layout_constraintStart_toStartOf="@+id/tank_background"
+        app:layout_constraintTop_toTopOf="@+id/tank_background" />
+
+    <TextView
+        android:id="@+id/text_fish_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="64dp"
+        android:text="%2,23 кг/шт"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/tank_background"
+        app:layout_constraintStart_toStartOf="@+id/tank_background"
+        app:layout_constraintTop_toBottomOf="@+id/text_tank_title" />
+
+    <TextView
+        android:id="@+id/text_fish_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%2000 шт"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/text_fish_weight"
+        app:layout_constraintTop_toBottomOf="@+id/text_fish_weight" />
+
+    <TextView
+        android:id="@+id/text_all_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%2000 кг"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/text_fish_amount"
+        app:layout_constraintTop_toBottomOf="@+id/text_fish_amount" />
+
+    <ImageView
+        android:id="@+id/icon_fish_weight"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_scales_96"
+        app:layout_constraintBottom_toBottomOf="@+id/text_fish_weight"
+        app:layout_constraintEnd_toStartOf="@+id/text_fish_weight"
+        app:layout_constraintTop_toTopOf="@+id/text_fish_weight" />
+
+    <ImageView
+        android:id="@+id/icon_fish_amount"
+        android:src="@drawable/ic_whole_fish_96"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_fish_amount"
+        app:layout_constraintEnd_toStartOf="@+id/text_fish_amount"
+        app:layout_constraintTop_toTopOf="@+id/text_fish_amount" />
+
+    <ImageView
+        android:id="@+id/icon_all_weight"
+        android:src="@drawable/ic_aquarium_96"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_all_weight"
+        app:layout_constraintEnd_toStartOf="@+id/text_all_weight"
+        app:layout_constraintTop_toTopOf="@+id/text_all_weight" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainpage.ChartFragment">
+
+    <ImageView
+        android:id="@+id/action_return"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tank_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tank_view" />
+
+    <ru.arvata.pomor.util.TankView
+        android:id="@+id/tank_view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:text="%1"
+        app:layout_constraintStart_toEndOf="@+id/action_return"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_chart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="%chart type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tank_view"
+        app:layout_constraintEnd_toStartOf="@+id/action_switch"
+        app:layout_constraintStart_toEndOf="@+id/tank_view" />
+
+    <ImageButton
+        android:id="@+id/action_switch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_border_all_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tank_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tank_view" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="action_return,tank_view,label_chart,action_switch"
+        app:barrierDirection="bottom" />
+
+    <Spinner
+        android:id="@+id/selector_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/barrier4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        />
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        tools:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/selector_period"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/layout_chart" />
+
+        <xyz.sangcomz.stickytimelineview.TimeLineRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sectionTitleTextColor="@color/colorAccent"
+            app:timeLineColor="@color/colorAccent"
+            app:timeLineCircleColor="@color/colorAccent"
+            app:isSticky="false"
+            tools:layout_height="100dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            />
+
+    </ViewSwitcher>
+
+</android.support.constraint.ConstraintLayout>

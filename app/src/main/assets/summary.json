@@ -1,0 +1,246 @@
+{
+  "users" : [
+    {
+      "id" : "userId1",
+      "email" : "em@ail.email",
+      "name" : "Налим Петрович",
+      "login" : "nalim777",
+      "role" : "Дежурный рыбовод"
+    },
+    {
+      "id" : "userId2",
+      "email" : "em2@ail2.email",
+      "name" : "Поликарп Монокарпов",
+      "login" : "carps4ever",
+      "role" : "Дежурный рыбовод"
+    }
+  ],
+  "feedProducers" : [
+    {
+      "id" : "feedProducerId1",
+      "name" : "Fishkies"
+    }
+  ],
+  "sites" : [
+    {
+      "id" : "siteId1",
+      "name" : "Участок №1"
+    },
+    {
+      "id" : "siteId2",
+      "name" : "Участок номер два"
+    },
+    {
+      "id" : "siteId3",
+      "name" : "Участок три"
+    }
+  ],
+  "tanks" : [
+    {
+      "id" : "tankId1",
+      "number" : 1,
+      "siteId" : "siteId1",
+      "fishAmount" : 1000,
+      "indicators" : {
+        "fishWeight" : {
+          "id" : "indicatorId1",
+          "indicator" : 1.25,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "fishWeight"
+        },
+        "temperature" : {
+          "id" : "indicatorId2",
+          "indicator" : 20.1,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "temperature"
+        },
+        "oxygen" : {
+          "id" : "indicatorId3",
+          "indicator" : 7.5,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "oxygen"
+        },
+        "feeding" : {
+          "id" : "indicatorId4",
+          "indicator" : 10.12,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "feeding",
+          "feedProducerId" : "feedProducerId1"
+        },
+        "seeding" : {
+          "id" : "indicatorId5",
+          "indicator" : 100,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "seeding"
+        },
+        "mortality" : {
+          "id" : "indicatorId6",
+          "indicator" : 15,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "mortality"
+        },
+        "moving" : {
+          "id" : "indicatorId7",
+          "indicator" : 10,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "moving",
+          "movingTankId" : "tankId2",
+          "movingReason" : "planned"
+        },
+        "catch" : {
+          "id" : "indicatorId8",
+          "indicator" : 20,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId1",
+          "type" : "catch",
+          "catchReason" : "noReason"
+        }
+      }
+    },
+    {
+      "id" : "tankId2",
+      "number" : 2,
+      "siteId" : "siteId2",
+      "fishAmount" : 500,
+      "indicators" : {
+        "fishWeight" : {
+          "id" : "indicatorId15",
+          "indicator" : 1.00,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "fishWeight"
+        },
+        "temperature" : {
+          "id" : "indicatorId16",
+          "indicator" : 19.0,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "temperature"
+        },
+        "oxygen" : {
+          "id" : "indicatorId17",
+          "indicator" : 7.0,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "oxygen"
+        },
+        "feeding" : {
+          "id" : "indicatorId18",
+          "indicator" : 10.12,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "feeding",
+          "feedProducerId" : "feedProducerId1"
+        },
+        "seeding" : {
+          "id" : "indicatorId19",
+          "indicator" : 100,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "seeding"
+        },
+        "mortality" : {
+          "id" : "indicatorId20",
+          "indicator" : 15,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "mortality"
+        },
+        "moving" : {
+          "id" : "indicatorId21",
+          "indicator" : 10,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "moving",
+          "movingTankId" : "tankId1",
+          "movingReason" : "planned"
+        },
+        "catch" : {
+          "id" : "indicatorId22",
+          "indicator" : 20,
+          "timestamp" : "2019-05-12T10:30:37.000Z",
+          "tankId" : "tankId2",
+          "type" : "catch",
+          "catchReason" : "noReason"
+        }
+      }
+    }
+  ],
+  "temperatureIndicators" : [
+    {
+      "id" : "indicatorId2",
+      "indicator" : 20.1,
+      "timestamp" : "2019-05-12T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "temperature"
+    },
+    {
+      "id" : "indicatorId9",
+      "indicator" : 19.5,
+      "timestamp" : "2019-05-11T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "temperature"
+    },
+    {
+      "id" : "indicatorId10",
+      "indicator" : 19.0,
+      "timestamp" : "2019-05-10T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "temperature"
+    },
+    {
+      "id" : "indicatorId13",
+      "indicator" : 20.5,
+      "timestamp" : "2019-05-13T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "temperature"
+    },
+    {
+      "id" : "indicatorId14",
+      "indicator" : 20.0,
+      "timestamp" : "2019-05-13T11:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "temperature"
+    }
+  ],
+  "oxygenIndicators" : [
+    {
+      "id" : "indicatorId3",
+      "indicator" : 7.5,
+      "timestamp" : "2019-05-12T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "oxygen"
+    },
+    {
+      "id" : "indicatorId11",
+      "indicator" : 7.0,
+      "timestamp" : "2019-05-11T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "oxygen"
+    },
+    {
+      "id" : "indicatorId12",
+      "indicator" : 8.5,
+      "timestamp" : "2019-05-10T10:30:37.000Z",
+      "tankId" : "tankId1",
+      "type" : "oxygen"
+    }
+  ],
+  "events" : [
+    {
+      "id" : "evenId1",
+      "userId" : "userId1",
+      "siteId" : "siteId1",
+      "tankId" : "tankId1",
+      "description" : "Event 1",
+      "timestamp" : "2019-05-10T10:30:37.000Z"
+    }
+  ]
+}

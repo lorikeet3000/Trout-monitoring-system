@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="tank1">1</integer>
+    <integer name="tank2">2</integer>
+    <integer name="tank3">3</integer>
+    <integer name="tank4">4</integer>
+    <integer name="tank5">5</integer>
+    <integer name="tank6">6</integer>
+    <integer name="tank7">7</integer>
+    <integer name="tank8">8</integer>
+    <integer name="tank9">9</integer>
+    <integer name="tank10">10</integer>
+    <integer name="tank11">11</integer>
+    <integer name="tank12">12</integer>
+    <integer name="tank13">13</integer>
+    <integer name="tank14">14</integer>
+    <integer name="tank15">15</integer>
+    <integer name="tank16">16</integer>
+    <integer name="tank17">17</integer>
+    <integer name="tank18">18</integer>
+</resources>

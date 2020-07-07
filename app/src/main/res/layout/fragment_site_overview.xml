@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.overview.SiteOverviewFragment">
+
+        <TextView
+            android:id="@+id/label_area_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:drawableStart="@drawable/ic_info_black_24dp"
+            android:drawablePadding="32dp"
+            android:drawableTint="@color/colorPrimary"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/site_overview"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- sites -->
+        <TextView
+            android:id="@+id/label_tanks_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/tanks_number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_area_overview" />
+
+        <TextView
+            android:id="@+id/text_tanks_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            style="@style/IndicatorText"
+            android:text="%22"
+            app:layout_constraintBottom_toBottomOf="@+id/label_tanks_number"
+            app:layout_constraintStart_toEndOf="@+id/barrier9"
+            app:layout_constraintTop_toTopOf="@+id/label_tanks_number" />
+
+        <!-- fishAmount -->
+        <TextView
+            android:id="@+id/label_fish_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/fish_amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_tanks_number" />
+
+        <TextView
+            android:id="@+id/text_fish_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            style="@style/IndicatorText"
+            android:text="%14 970"
+            app:layout_constraintBottom_toBottomOf="@+id/label_fish_amount"
+            app:layout_constraintStart_toEndOf="@+id/barrier9"
+            app:layout_constraintTop_toTopOf="@+id/label_fish_amount" />
+
+        <!-- allWeight -->
+        <TextView
+            android:id="@+id/label_all_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/overview_all_weight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_fish_amount" />
+
+        <TextView
+            android:id="@+id/text_all_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="%171 908"
+            style="@style/IndicatorText"
+            app:layout_constraintBottom_toBottomOf="@+id/label_all_weight"
+            app:layout_constraintStart_toEndOf="@+id/barrier9"
+            app:layout_constraintTop_toTopOf="@+id/label_all_weight" />
+
+        <!-- avg temperature -->
+        <TextView
+            android:id="@+id/label_avg_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/average_temperature"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_all_weight" />
+
+        <TextView
+            android:id="@+id/text_avg_temperature_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="%Today"
+            app:layout_constraintStart_toStartOf="@+id/label_avg_temperature"
+            app:layout_constraintTop_toBottomOf="@+id/label_avg_temperature" />
+
+        <TextView
+            android:id="@+id/text_avg_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            style="@style/IndicatorText"
+            android:text="%19"
+            app:layout_constraintBottom_toBottomOf="@+id/text_avg_temperature_time"
+            app:layout_constraintStart_toEndOf="@+id/barrier9"
+            app:layout_constraintTop_toTopOf="@+id/label_avg_temperature" />
+
+        <!-- avg oxygen -->
+        <TextView
+            android:id="@+id/label_avg_oxygen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/average_oxygen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_avg_temperature_time" />
+
+        <TextView
+            android:id="@+id/text_avg_oxygen_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="%Today"
+            app:layout_constraintStart_toStartOf="@+id/label_avg_oxygen"
+            app:layout_constraintTop_toBottomOf="@+id/label_avg_oxygen" />
+
+        <TextView
+            android:id="@+id/text_avg_oxygen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            style="@style/IndicatorText"
+            android:text="%18,3"
+            app:layout_constraintBottom_toBottomOf="@+id/text_avg_oxygen_time"
+            app:layout_constraintStart_toEndOf="@+id/barrier9"
+            app:layout_constraintTop_toTopOf="@+id/label_avg_oxygen" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="label_tanks_number,label_fish_amount,label_all_weight,label_avg_temperature,text_avg_temperature_time,label_avg_oxygen,text_avg_oxygen_time"
+            app:barrierDirection="right" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

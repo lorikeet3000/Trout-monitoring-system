@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "226439847570",
+    "firebase_url": "https://monitoring-system-9b0ce.firebaseio.com",
+    "project_id": "monitoring-system-9b0ce",
+    "storage_bucket": "monitoring-system-9b0ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226439847570:android:fb09fb90ef0958ea",
+        "android_client_info": {
+          "package_name": "ru.arvata.pomor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226439847570-3h7u95s6efjgb9271as61ptohphud08d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwwKDXwk1MeL_95BcwcX5R7z73rShkzYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226439847570-3h7u95s6efjgb9271as61ptohphud08d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6A6A6A</color>
+    <color name="colorPrimaryDark">#373640</color>
+    <color name="colorAccent">#4DD0E1</color>
+
+    <color name="textOnPrimary">#ffffff</color>
+    <color name="textOnPrimaryDark">#ffffff</color>
+    <color name="textOnAccent">#ffffff</color>
+
+    <color name="colorRed">#ff8a65</color>
+    <color name="colorYellow">#FFB74D</color>
+    <color name="colorGreen">#81C784</color>
+
+    <color name="textColorOnRed">#ffffff</color>
+    <color name="textColorOnYellow">#ffffff</color>
+    <color name="textColorOnGreen">#ffffff</color>
+
+    <color name="colorGrey">#e5e5e5</color>
+    <color name="colorGrey50">#80e5e5e5</color>
+    <color name="colorGreyLight">#F8F8F8</color>
+    <color name="colorGreyDark">#C4C4C4</color>
+
+    <color name="textColorOnGrey">#000</color>
+    <color name="textColorOnGreyLight">#000</color>
+
+    <color name="colorRedLight">#80ff8a65</color>
+    <color name="colorYellowLight">#FFE0B2</color>
+    <color name="colorGreenLight">#C8E6C9</color>
+
+    <color name="textColorOnRedLight">#000</color>
+    <color name="textColorOnYellowLight">#000</color>
+    <color name="textColorOnGreenLight">#000</color>
+
+    <color name="colorRedExtraLight">#38FFD7C1</color>
+    <color name="colorYellowExtraLight">#38FFF4B8</color>
+    <color name="colorGreenExtraLight">#38BEF2C0</color>
+
+    <color name="destructiveRed">#ff0000</color>
+    <color name="white">#fff</color>
+</resources>
